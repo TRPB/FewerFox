@@ -96,3 +96,8 @@ popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target ~ t
 #nav-bar:hover #nav-bar-customization-target ~ toolbarbutton {
     opacity: 1 !important;
 }
+
+#identity-box.notSecure ~ .urlbar-input-box #urlbar-input,
+#identity-box.chromeUI ~ .urlbar-input-box #urlbar-input {
+    margin-left: 0em !important;
+}
