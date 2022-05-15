@@ -25,6 +25,7 @@ popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target,
 #nav-bar:hover #nav-bar-customization-target {
     margin-left: 0em;
     width: 50vw;
+    transition-delay: 0s;
 }
 
 #urlbar-input-container .urlbar-input-box #urlbar-input {
@@ -81,6 +82,7 @@ popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target,
     min-width: 24em;
     width: 24em;
     transition: all 0.3s ease-in;
+    transition-delay: 0.2s;
 }
 
 #nav-bar-customization-target ~ toolbarbutton,
