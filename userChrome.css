@@ -1,3 +1,18 @@
+:root {
+    /**
+     * The number of buttons (back, forward, stop, etc) to the left of the URL bar
+   * Add 1px here for each button 3 buttons = 3px
+     */
+    --buttons-left-of-urlbar: 3;
+
+    /**
+     * Width of `https://` text in your font as an m and a / may not be proportional in all fonts
+     * Adjust this until only `https://` is hidden in the URL bar
+     * +/-0.1 should work for most fonts
+     */
+    --https-text-offset-amount: -3.7em;
+}
+
 #navigator-toolbox {
     display: flex;
 }
@@ -30,7 +45,7 @@ popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target,
 }
 
 #urlbar-input-container .urlbar-input-box #urlbar-input {
-    margin-left: -3.7em !important;
+    margin-left: var(--https-text-offset-amount) !important;
     transition: all 0.3s ease-in;
 }
 
@@ -80,7 +95,7 @@ popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target,
 }
 
 #nav-bar-customization-target {
-    margin-left: -7.4em;
+    margin-left: calc(0px - calc(var(--buttons-left-of-urlbar) * 34px));
     min-width: 24em;
     width: 24em;
     transition: all 0.3s ease-in;
