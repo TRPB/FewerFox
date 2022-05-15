@@ -12,6 +12,11 @@ FewerFox is a `userChrome.css` that gives Firefox a very minimal UI. The navigat
 2. Use the `userChrome.css` from this repository.
 
 
+## Known bugs
+
+1. The right click menu causes the address bar to expand: See #1
+
+2. Non-HTTPs URLs are partially obscured (WIP, this should be fixable)
 
 
 Please report bugs/issues on this github repo.
