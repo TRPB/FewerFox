@@ -20,6 +20,7 @@
     transition: all 0.3s ease-in;
 }
 
+:root[customizing] #nav-bar-customization-target,
 #nav-bar:focus-within #nav-bar-customization-target,
 popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target,
 #nav-bar:hover #nav-bar-customization-target {
@@ -35,7 +36,7 @@ popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target,
 
 #urlbar-input-container .urlbar-input-box #urlbar-input:placeholder-shown {
     margin-left: 0 !important;
-    transition: none;
+    transition-delay: 0.1s;
 }
 
 #nav-bar:hover .urlbar-input-box #urlbar-input,
@@ -72,6 +73,7 @@ popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target,
     background-color: SelectedItem;
 }
 
+:root[customizing] #navigator-toolbox-background #nav-bar-customization-target,
 popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target,
 #nav-bar:hover #nav-bar-customization-target #page-action-buttons {
     margin-right: 0;
@@ -82,7 +84,7 @@ popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target,
     min-width: 24em;
     width: 24em;
     transition: all 0.3s ease-in;
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
 }
 
 #nav-bar-customization-target ~ toolbarbutton,
@@ -91,6 +93,8 @@ popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target,
     transition: opacity 0.3s ease-in;
 }
 
+:root[customizing] #nav-bar-customization-target ~ toolbaritem,
+:root[customizing] #nav-bar-customization-target ~ toolbarbutton,
 popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target ~ toolbaritem,
 #nav-bar:focus-within #nav-bar-customization-target ~ toolbaritem,
 #nav-bar:hover #nav-bar-customization-target ~ toolbaritem,
